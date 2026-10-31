@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<script>/* focus-guard: a focus ring only for people using a keyboard.
+
+   The bug it ends: a menu, drawer or dialog opens and its FIRST link (or the dialog's close button)
+   is outlined, as if it were selected. Cause: opening code calls first.focus(), or <dialog>.showModal()
+   focuses the first control by itself. When nothing was focused before, the browser decides the ring is
+   wanted. Safari never focuses a button on click and a touch tap never does either, so on iPhone,
+   iPad and Safari the very first tap paints the ring. Chrome with a mouse hides it, which is why it
+   passes the desktop check and then reappears on Sindri's phone.
+
+   How: remember the last input kind on <html data-input="pointer|key"> and let focus-guard.css drop the
+   ring while the last input was a pointer. Keyboard users keep every ring. Load before everything else
+   (inline in <head>, ~400 bytes), no dependencies. Doc: _tools/focus-guard/README.md */
+(function () {
+  var root = document.documentElement;
+  function set(v) { if (root.getAttribute('data-input') !== v) root.setAttribute('data-input', v); }
+  addEventListener('pointerdown', function () { set('pointer'); }, true);
+  addEventListener('keydown', function (e) {
+    if (e.key === 'Shift' || e.key === 'Control' || e.key === 'Alt' || e.key === 'Meta') return;
+    set('key');
+  }, true);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Sumarhús 2 · Þurranes</title>
+<meta name="description" content="Veldu hús og dagsetningar · Þurranes, Saurbær, Dalabyggð">
+<link rel="alternate" hreflang="en" href="/thurranes-preview/en/stays/cottage-2/">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/thurranes-preview/assets/fonts/cabinet-grotesk/css/cabinet-grotesk.css">
+<link rel="stylesheet" href="/thurranes-preview/assets/picker/stay-picker.css">
+<link rel="stylesheet" href="/thurranes-preview/assets/vendor/sndr-booking.css">
+<link rel="stylesheet" href="/thurranes-preview/assets/css/site.css">
+</head><body><a class="skip site-ui" href="#main">Fara í efni</a>
+<nav class="sticky site-ui inner-nav" aria-label="Valmynd" aria-hidden="false">
+<a class="brand" href="/thurranes-preview/">ÞURRANES</a>
+<div>
+<a class="desktop-link" href="/thurranes-preview/#husin">Húsin</a>
+<a class="desktop-link" href="/thurranes-preview/#farm">Bærinn</a>
+<a class="desktop-link" href="/thurranes-preview/#location">Staðsetning</a>
+<a data-language href="/thurranes-preview/en/stays/cottage-2/" aria-label="English">EN</a>
+<button data-menu aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">Valmynd</button>
+<button class="button" data-book>Bóka</button>
+</div>
+</nav><main class="site-content detail-page" id="main"><header class="wrap house-overview"><p class="eyebrow">Þurranes · Saurbær · Dalabyggð</p><h1 tabindex="-1">Sumarhús 2</h1><p class="intro">Sumarhús með tveimur svefnherbergjum og svefnlofti, eldhúsi og eigin heitum potti á pallinum, þar sem gott er að slaka á eftir ferðalag dagsins.</p><div class="house-gallery"><figure class="gallery-main"><img class="" src="/thurranes-preview/assets/img/cottage-2.jpg"  width="800" height="533" alt="Sumarhús 2" loading="eager" decoding="async"><figcaption aria-live="polite">Sumarhús 2</figcaption></figure><div class="gallery-secondary"><button aria-pressed="false" data-thumbnail="1" aria-label="Sumarhúsin eru eins innréttuð"><img class="" src="/thurranes-preview/assets/img/cottage-living.jpg"  width="800" height="533" alt="Sumarhúsin eru eins innréttuð" loading="lazy" decoding="async"></button><button aria-pressed="false" data-thumbnail="2" aria-label="Sumarhúsin eru eins innréttuð"><img class="" src="/thurranes-preview/assets/img/cottage-kitchen-loft.jpg"  width="800" height="533" alt="Sumarhúsin eru eins innréttuð" loading="lazy" decoding="async"></button></div><button class="button all-photos" data-gallery-open aria-haspopup="dialog">Sjá allar myndir ↗</button></div></header>
+ <section class="wrap section house-facts"><div class="rule"></div><h2>Gistingin</h2><dl><div><dt>Gestir</dt><dd>6 gestir</dd></div><div><dt>Herbergi</dt><dd>2 svefnherbergi og svefnloft</dd></div><div><dt>Rúm</dt><dd>2 tvíbreið rúm og svefnpláss fyrir tvo á lofti</dd></div><div><dt>Stærð</dt><dd>43 m²</dd></div></dl></section>
+ <section class="wrap section amenities"><div class="rule"></div><h2>Aðstaða</h2><div class="amenity-grid"><div><h3>Eldhús</h3><ul><li>Eldavélahellur</li><li>Örbylgjuofn</li><li>Eldhúsáhöld</li></ul></div><div><h3>Baðherbergi</h3><ul><li>Sturta</li></ul></div><div><h3>Úti</h3><ul><li>Pallur</li><li>Kolagrill</li><li>Heitur pottur</li></ul></div></div></section>
+ <section class="wrap section rules"><div class="rule"></div><h2>Skilmálar</h2><p>Spurðu gestgjafa um skilmála.</p><p><a class="text-link" href="tel:+3548677286">867 7286</a> · <a class="text-link" href="mailto:thurranes@gmail.com">thurranes@gmail.com</a></p></section>
+ <section id="availability" class="wrap section availability"><div class="rule"></div><h2>Lausar dagsetningar</h2><p class="intro">Sumarhús 2</p><div id="inline-booking" class="inline-booking site-ui">
+
+<form class="bk-bar" novalidate tabindex="-1">
+
+<div class="bk-body">
+
+<div class="bk-dates">
+<div class="bk-when">
+<p class="bk-l" id="inline-bk-cal-l">Dagsetningar</p>
+<p class="bk-range">
+<span data-from>Koma</span> <span class="bk-to">til</span> <span data-to>Brottför</span>
+</p>
+</div>
+<div class="bk-gst">
+<div>
+<p class="bk-l" id="inline-bk-g-l">Gestir</p>
+<p class="bk-gnote" aria-live="polite">
+</p>
+</div>
+<div class="bk-step" role="group" aria-labelledby="inline-bk-g-l">
+<button class="bk-minus" type="button" aria-label="Fækka um einn gest">−</button>
+<output class="bk-n">2</output>
+<button class="bk-plus" type="button" aria-label="Fjölga um einn gest">＋</button>
+</div>
+</div>
+<div class="bk-months" role="group" aria-labelledby="inline-bk-cal-l" aria-live="polite">
+</div>
+</div>
+<div class="bk-who" hidden>
+<h3 class="bk-l" tabindex="-1">Upplýsingar um þig</h3>
+<div class="bk-fields"><label>
+<span>Nafn</span>
+<input name="name" type="text" autocomplete="name" required>
+</label><label>
+<span>Netfang</span>
+<input name="email" type="email" autocomplete="email" required>
+</label><label>
+<span>Sími (valfrjálst)</span>
+<input name="phone" type="tel" autocomplete="tel" >
+</label><label class="bk-wide">
+<span>Eitthvað sem gestgjafar ættu að vita?</span>
+<textarea name="message" rows="3">
+</textarea>
+</label>
+</div>
+<button class="bk-back text-link" type="button">Breyta dagsetningum</button>
+</div>
+<div class="bk-done" hidden>
+<h3 tabindex="-1">Beiðnin var ekki send.</h3>
+<p class="bk-done-dates">
+</p>
+<p>
+<span class="bk-done-name">
+</span>
+</p>
+<p>Þetta er forskoðun. Engin bókun eða sending hefur farið fram. Hafðu samband við gestgjafa til að bóka.</p>
+<a href="mailto:thurranes@gmail.com">thurranes@gmail.com</a>
+</div>
+<p class="bk-foot bk-foot--body">Forskoðun: allar nætur sýndar lausar. Á vefnum fylgir dagatalið Airbnb.</p>
+</div>
+<div class="bk-end">
+<p class="bk-sum" aria-live="polite">
+</p>
+<button class="button bk-action" type="submit">
+<span>Velja þessar dagsetningar</span>
+</button>
+<p class="bk-note" aria-live="polite" id="inline-booking-error">
+</p>
+<p class="bk-foot bk-foot--bar">Forskoðun: allar nætur sýndar lausar. Á vefnum fylgir dagatalið Airbnb.</p>
+</div>
+</form>
+</div><div class="inline-book-action"><button class="button" data-book data-house="cottage-2">Velja dagsetningar</button></div></section><section class="wrap section related"><h2>Önnur hús</h2><div class="related-grid"><article><a class="house-image" href="/thurranes-preview/hus/gamla-husid/"><img class="" src="/thurranes-preview/assets/img/farmhouse.jpg" srcset="/thurranes-preview/assets/img/farmhouse-1000.jpg 1000w, /thurranes-preview/assets/img/farmhouse.jpg 2000w" sizes="(max-width: 767px) 100vw, 90vw" width="2000" height="1339" alt="Gamla húsið" loading="lazy" decoding="async"></a><h3><a href="/thurranes-preview/hus/gamla-husid/">Gamla húsið</a></h3><p>Fyrir hópa</p></article><article><a class="house-image" href="/thurranes-preview/hus/sumarhus-1/"><img class="" src="/thurranes-preview/assets/img/cottage-1.jpg" srcset="/thurranes-preview/assets/img/cottage-1-1000.jpg 1000w, /thurranes-preview/assets/img/cottage-1.jpg 2000w" sizes="(max-width: 767px) 100vw, 90vw" width="2000" height="1339" alt="Sumarhús 1" loading="lazy" decoding="async"></a><h3><a href="/thurranes-preview/hus/sumarhus-1/">Sumarhús 1</a></h3><p>6 gestir</p></article><article><a class="house-image" href="/thurranes-preview/hus/sumarhus-3/"><img class="" src="/thurranes-preview/assets/img/cottage-3.jpg"  width="800" height="533" alt="Sumarhús 3" loading="lazy" decoding="async"></a><h3><a href="/thurranes-preview/hus/sumarhus-3/">Sumarhús 3</a></h3><p>6 gestir</p></article></div></section></main>
+ <aside class="house-book-bar site-ui" inert aria-hidden="true"><div><strong>Sumarhús 2</strong><span class="house-book-summary">6 gestir</span></div><button class="button" data-book data-house="cottage-2">Velja dagsetningar</button></aside><dialog id="gallery" class="gallery-dialog site-ui" aria-labelledby="gallery-title"><div class="gallery-bg" data-gallery-close></div><div class="gallery-panel" tabindex="-1"><div class="gallery-top"><h2 id="gallery-title">Myndir</h2><button data-gallery-close aria-label="Loka">×</button></div><figure><div class="gallery-frame"><img class="gallery-full" src="/thurranes-preview/assets/img/cottage-2.jpg" width="800" height="533" alt="Sumarhús 2"><p class="gallery-error" hidden>Myndin hlóðst ekki. <button data-gallery-retry>Reyna aftur</button></p></div><figcaption aria-live="polite">Sumarhús 2</figcaption></figure><div class="gallery-controls"><button data-gallery-prev aria-label="Fyrri mynd">←</button><span class="gallery-count" aria-live="polite">1 / 7</span><button data-gallery-next aria-label="Næsta mynd">→</button></div></div></dialog><footer class="site-content wrap footer">
+<div class="rule">
+</div>
+<div class="footer-grid">
+<div>
+<p class="brand">ÞURRANES</p>
+<p>Þurranes, Saurbær<br>Dalabyggð</p>
+</div>
+<div><a href="/thurranes-preview/hus/gamla-husid/">Gamla húsið</a><a href="/thurranes-preview/hus/sumarhus-1/">Sumarhús 1</a><a href="/thurranes-preview/hus/sumarhus-2/">Sumarhús 2</a><a href="/thurranes-preview/hus/sumarhus-3/">Sumarhús 3</a></div>
+<div>
+<a href="tel:+3548677286">867 7286</a>
+<a href="tel:+3544341556">434 1556</a>
+<a href="mailto:thurranes@gmail.com">thurranes@gmail.com</a>
+</div>
+<div>
+<a href="/thurranes-preview/samband/">Hafa samband</a>
+<a data-language href="/thurranes-preview/en/stays/cottage-2/">English</a>
+</div>
+</div>
+<p class="credit">Hannað af <a href="https://sndrstudio.is">SNDR Studio</a>
+</p>
+</footer><dialog class="menu-dialog site-ui" id="menu" aria-labelledby="menu-title">
+<div class="modal-bg" data-menu-close>
+</div>
+<div class="menu-panel" tabindex="-1">
+<div class="panel-top">
+<h2 id="menu-title">Valmynd</h2>
+<button data-menu-close aria-label="Loka">×</button>
+</div>
+<nav>
+<div class="menu-group">
+<a href="/thurranes-preview/#husin">Húsin</a>
+<a href="/thurranes-preview/#farm">Bærinn</a>
+</div>
+<div class="menu-group">
+<a href="/thurranes-preview/#land">Landið og árstíðirnar</a>
+<a href="/thurranes-preview/#location">Staðsetning</a>
+</div>
+<div class="menu-group">
+<a href="/thurranes-preview/samband/">Hafa samband</a>
+</div>
+<div class="menu-group languages">
+<a data-language href="/thurranes-preview/en/stays/cottage-2/">English</a>
+</div>
+</nav>
+<p>Þurranes, Saurbær<br>Dalabyggð</p>
+</div>
+</dialog><dialog id="book" class="bk site-ui" aria-labelledby="bk-h" tabindex="-1">
+<div class="bk-bg" data-book-close>
+</div>
+<form class="bk-bar" novalidate tabindex="-1">
+<div class="bk-top">
+<div>
+<h2 class="bk-h" id="bk-h">Veldu hús og dagsetningar</h2>
+<p class="bk-sub" id="bk-sub">Veldu hús</p>
+</div>
+<button class="bk-x" type="button" data-book-close aria-label="Loka">×</button>
+</div>
+<div class="bk-body">
+<div class="bk-house" role="group" aria-label="Veldu hús"><button type="button" data-house="farmhouse" aria-pressed="false">Gamla húsið</button><button type="button" data-house="cottage-1" aria-pressed="false">Sumarhús 1</button><button type="button" data-house="cottage-2" aria-pressed="false">Sumarhús 2</button><button type="button" data-house="cottage-3" aria-pressed="false">Sumarhús 3</button></div>
+<div class="bk-dates">
+<div class="bk-when">
+<p class="bk-l" id="bk-cal-l">Dagsetningar</p>
+<p class="bk-range">
+<span data-from>Koma</span> <span class="bk-to">til</span> <span data-to>Brottför</span>
+</p>
+</div>
+<div class="bk-gst">
+<div>
+<p class="bk-l" id="bk-g-l">Gestir</p>
+<p class="bk-gnote" aria-live="polite">
+</p>
+</div>
+<div class="bk-step" role="group" aria-labelledby="bk-g-l">
+<button class="bk-minus" type="button" aria-label="Fækka um einn gest">−</button>
+<output class="bk-n">2</output>
+<button class="bk-plus" type="button" aria-label="Fjölga um einn gest">＋</button>
+</div>
+</div>
+<div class="bk-months" role="group" aria-labelledby="bk-cal-l" aria-live="polite">
+</div>
+</div>
+<div class="bk-who" hidden>
+<h3 class="bk-l" tabindex="-1">Upplýsingar um þig</h3>
+<div class="bk-fields"><label>
+<span>Nafn</span>
+<input name="name" type="text" autocomplete="name" required>
+</label><label>
+<span>Netfang</span>
+<input name="email" type="email" autocomplete="email" required>
+</label><label>
+<span>Sími (valfrjálst)</span>
+<input name="phone" type="tel" autocomplete="tel" >
+</label><label class="bk-wide">
+<span>Eitthvað sem gestgjafar ættu að vita?</span>
+<textarea name="message" rows="3">
+</textarea>
+</label>
+</div>
+<button class="bk-back text-link" type="button">Breyta dagsetningum</button>
+</div>
+<div class="bk-done" hidden>
+<h3 tabindex="-1">Beiðnin var ekki send.</h3>
+<p class="bk-done-dates">
+</p>
+<p>
+<span class="bk-done-name">
+</span>
+</p>
+<p>Þetta er forskoðun. Engin bókun eða sending hefur farið fram. Hafðu samband við gestgjafa til að bóka.</p>
+<a href="mailto:thurranes@gmail.com">thurranes@gmail.com</a>
+</div>
+<p class="bk-foot bk-foot--body">Forskoðun: allar nætur sýndar lausar. Á vefnum fylgir dagatalið Airbnb.</p>
+</div>
+<div class="bk-end">
+<p class="bk-sum" aria-live="polite">
+</p>
+<button class="button bk-action" type="submit">
+<span>Velja þessar dagsetningar</span>
+</button>
+<p class="bk-note" aria-live="polite" id="booking-error">
+</p>
+<p class="bk-foot bk-foot--bar">Forskoðun: allar nætur sýndar lausar. Á vefnum fylgir dagatalið Airbnb.</p>
+</div>
+</form>
+</dialog><script id="site-data" type="application/json">{"lang":"is","copy":{"headline":["HÚSIN Í","ÞURRANESI"],"menu":"Valmynd","close":"Loka","book":"Bóka","bookStay":"Bóka dvöl","view":"Skoða húsið","farm":"Bærinn","houses":"Húsin","land":"Landið og árstíðirnar","location":"Leiðin í Þurranes","locationNav":"Staðsetning","reviews":"Umsagnir","contact":"Hafa samband","contactRoute":"/thurranes-preview/samband/","skip":"Fara í efni","choose":"Veldu hús og dagsetningar","farmText":"Þurranes er bær í Saurbæ í Dalasýslu, við Gilsfjörð. Hér er boðið upp á gistingu í gamla íbúðarhúsinu og þremur sumarhúsum. Gamla húsið hentar vel fyrir hópa og sumarhúsin má leigja í stakar nætur eða heilar vikur. Í nágrenninu eru gönguleiðir, sundlaugar og sögustaðir. Jón Ingi, staðarhaldari, aðstoðar gesti sem vilja fá upplýsingar um afþreyingu og skipuleggja dagana sína. Frá bænum má fara í gönguferð upp Belgsdal eða leggja af stað í bíltúr um Dalina.","farmAlt":"Bærinn í Þurranesi og opin tún","panAlt":"Þrjú sumarhús undir fjallinu í Þurranesi","panCaption":"Sumarhúsin í Þurranesi","fjord":"Fjörðurinn","fjordText":"Saurbær liggur við Gilsfjörð. Í nágrenninu má fara í gönguferðir eða aka hring um Gilsfjörð og koma við í Ólafsdal. Eigendur benda einnig á siglingu með Baldri á Breiðafirði og möguleikann á viðkomu í Flatey.","walk":"Gönguleiðir","walkText":"Frá Þurranesi liggja gönguleiðir upp Belgsdal og áfram yfir í Hvammsdal. Einnig er hægt að ganga að Laugum í Sælingsdal. Hafðu samband við staðarhaldara til að fá nánari upplýsingar um leiðir í nágrenninu.","directions":"Opna akstursleið","drive":"192 km frá Reykjavík · um 2 klst. 40 mín.","routeText":"Frá vegi 60 er beygt inn á veg 590 og síðan veg 594. Þurranes er fyrsti bærinn á þeirri leið.","previous":"Fyrri umsögn","next":"Næsta umsögn","reviewSource":"Umsagnir af vef Þurraness","credit":"Hannað af","dates":"Dagsetningar","arrival":"Koma","departure":"Brottför","to":"til","guests":"Gestir","fewer":"Fækka um einn gest","more":"Fjölga um einn gest","details":"Upplýsingar um þig","name":"Nafn","email":"Netfang","phone":"Sími (valfrjálst)","message":"Eitthvað sem gestgjafar ættu að vita?","back":"Breyta dagsetningum","done":"Beiðnin var ekki send.","demo":"Þetta er forskoðun. Engin bókun eða sending hefur farið fram. Hafðu samband við gestgjafa til að bóka.","foot":"Forskoðun: allar nætur sýndar lausar. Á vefnum fylgir dagatalið Airbnb.","group":"Hópastærð staðfest með gestgjafa","request":"Velja þessar dagsetningar","pickHouse":"Veldu hús","shared":"Sumarhúsin","landingIntro":"Fjögur hús í Saurbæ, Dalabyggð","landingJump":"Skoða húsin"},"detail":{"gallery":"Myndir","allPhotos":"Sjá allar myndir","prevPhoto":"Fyrri mynd","nextPhoto":"Næsta mynd","retry":"Reyna aftur","imageError":"Myndin hlóðst ekki.","facts":"Gistingin","rooms":"Herbergi","beds":"Rúm","amenities":"Aðstaða","kitchen":"Eldhús","bathroom":"Baðherbergi","outside":"Úti","rules":"Skilmálar","ask":"Spurðu gestgjafa um skilmála","availability":"Lausar dagsetningar","chooseDates":"Velja dagsetningar","continue":"Halda áfram","related":"Önnur hús","sharedLayout":"Sumarhúsin eru eins innréttuð","contactText":"Hafðu samband til að fá upplýsingar um gistingu og skipuleggja dvöl í Þurranesi.","area":"Stærð","farmRooms":"5 tveggja manna herbergi og svefnloft","farmBeds":"Tveggja manna herbergi og rúm á svefnlofti","cottageRooms":"2 svefnherbergi og svefnloft","cottageBeds":"2 tvíbreið rúm og svefnpláss fyrir tvo á lofti","farmAmenities":[["Fullbúið eldhús","Matsalur"],["Baðherbergi með sturtu"],["Pallur","Heitur pottur","Stórt kolagrill"]],"cottageAmenities":[["Eldavélahellur","Örbylgjuofn","Eldhúsáhöld"],["Sturta"],["Pallur","Kolagrill","Heitur pottur"]]},"reviews":[{"lang":"is","text":"Æðislegur staður og flott útsýni. Bústaðurinn hreinn og notanlegur. Potturinn var frábær. Við gistum í 3 nætur fjölskyldan um páskana og allt var til fyrirmyndar.","author":"Friðdóra Friðriksdóttir"},{"lang":"en","text":"We had a wonderful night in this cute cabin, all very clean and a nice hotpot. Wish we could have stayed longer. I would recommend more than 1 night, great location!","author":"Beate Maria Kury"},{"lang":"en","text":"We rented this cottage with a family of 5 for 3 nights and loved it! Clean, fresh, beautiful environment. Super quiet, Hot tub was a luxury.","author":"Sanne Lambriex"}],"houses":[{"id":"farmhouse","focus":"50% 66%","pick":"pick-farmhouse","openY":0.62,"sub":"Fyrir hópa · 5 herbergi","kicker":"Fyrir hópa","slug_is":"gamla-husid","slug_en":"old-farmhouse","name":"Gamla húsið","facts":{"is":["Fyrir hópa","5 tveggja manna herbergi + svefnloft","Matsalur"],"en":["For groups","5 double rooms + sleeping loft","Dining room"]},"description":"Gamla íbúðarhúsið á bænum tekur á móti stærri og minni hópum, með rúmgóðum matsal, eldhúsi og palli fyrir framan húsið.","photos":["farmhouse","farmhouse-deck","farmhouse-terrace","farmhouse-dining","farmhouse-kitchen","farmhouse-beds","farmhouse-loft"],"max":20,"subHot":"Fyrir hópa · 5 tveggja manna herbergi + svefnloft · Matsalur →","meta":["Fyrir hópa","5 tveggja manna herbergi + svefnloft","Matsalur"],"image":"/thurranes-preview/assets/img/pick-farmhouse.jpg","imageAlt":"Gamla húsið","href":"/thurranes-preview/hus/gamla-husid/"},{"id":"cottage-1","sub":"6 gestir · Heitur pottur","focus":"50% 66%","pick":"pick-cottage-1","openY":0.66,"kicker":"Sumarhús í Þurranesi","slug_is":"sumarhus-1","slug_en":"cottage-1","name":"Sumarhús 1","facts":{"is":["6 gestir","43 m²","Heitur pottur"],"en":["6 guests","43 m²","Hot tub"]},"description":"Sumarhús með tveimur svefnherbergjum og svefnlofti, eldhúsi og eigin heitum potti á pallinum, þar sem gott er að slaka á eftir ferðalag dagsins.","photos":["cottage-1"],"sharedPhotos":["cottage-living","cottage-kitchen-loft","hot-tub"],"max":6,"subHot":"6 gestir · 43 m² · Heitur pottur →","meta":["6 gestir","43 m²","Heitur pottur"],"image":"/thurranes-preview/assets/img/pick-cottage-1.jpg","imageAlt":"Sumarhús 1","href":"/thurranes-preview/hus/sumarhus-1/"},{"id":"cottage-2","sub":"6 gestir · Heitur pottur","focus":"50% 66%","pick":"pick-cottage-2","openY":0.66,"kicker":"Sumarhús í Þurranesi","slug_is":"sumarhus-2","slug_en":"cottage-2","name":"Sumarhús 2","facts":{"is":["6 gestir","43 m²","Heitur pottur"],"en":["6 guests","43 m²","Hot tub"]},"description":"Sumarhús með tveimur svefnherbergjum og svefnlofti, eldhúsi og eigin heitum potti á pallinum, þar sem gott er að slaka á eftir ferðalag dagsins.","photos":["cottage-2"],"sharedPhotos":["cottage-living","cottage-kitchen-loft","hot-tub"],"max":6,"subHot":"6 gestir · 43 m² · Heitur pottur →","meta":["6 gestir","43 m²","Heitur pottur"],"image":"/thurranes-preview/assets/img/pick-cottage-2.jpg","imageAlt":"Sumarhús 2","href":"/thurranes-preview/hus/sumarhus-2/"},{"id":"cottage-3","sub":"6 gestir · Heitur pottur","focus":"50% 66%","pick":"pick-cottage-3","openY":0.66,"kicker":"Sumarhús í Þurranesi","slug_is":"sumarhus-3","slug_en":"cottage-3","name":"Sumarhús 3","facts":{"is":["6 gestir","43 m²","Heitur pottur"],"en":["6 guests","43 m²","Hot tub"]},"description":"Sumarhús með tveimur svefnherbergjum og svefnlofti, eldhúsi og eigin heitum potti á pallinum, þar sem gott er að slaka á eftir ferðalag dagsins.","photos":["cottage-3"],"sharedPhotos":["cottage-living","cottage-kitchen-loft","hot-tub"],"max":6,"subHot":"6 gestir · 43 m² · Heitur pottur →","meta":["6 gestir","43 m²","Heitur pottur"],"image":"/thurranes-preview/assets/img/pick-cottage-3.jpg","imageAlt":"Sumarhús 3","href":"/thurranes-preview/hus/sumarhus-3/"}],"page":"house","houseId":"cottage-2","gallery":[{"name":"cottage-2","caption":"Sumarhús 2","src":"/thurranes-preview/assets/img/cottage-2.jpg","srcset":"","width":800,"height":533},{"name":"cottage-living","caption":"Sumarhúsin eru eins innréttuð","src":"/thurranes-preview/assets/img/cottage-living.jpg","srcset":"","width":800,"height":533},{"name":"cottage-kitchen-loft","caption":"Sumarhúsin eru eins innréttuð","src":"/thurranes-preview/assets/img/cottage-kitchen-loft.jpg","srcset":"","width":800,"height":533},{"name":"hot-tub","caption":"Heitur pottur við sumarhúsin","src":"/thurranes-preview/assets/img/hot-tub.jpg","srcset":"","width":800,"height":533},{"name":"cottages-row","caption":"Sumarhúsin","src":"/thurranes-preview/assets/img/cottages-row.jpg","srcset":"","width":800,"height":533},{"name":"cottages-field","caption":"Sumarhúsin og túnin","src":"/thurranes-preview/assets/img/cottages-field.jpg","srcset":"/thurranes-preview/assets/img/cottages-field-1000.jpg 1000w, /assets/img/cottages-field.jpg 2000w","width":2000,"height":1339},{"name":"cottages-mountain","caption":"Sumarhúsin undir fjallinu","src":"/thurranes-preview/assets/img/cottages-mountain.jpg","srcset":"/thurranes-preview/assets/img/cottages-mountain-1000.jpg 1000w, /assets/img/cottages-mountain.jpg 2000w","width":2000,"height":1334}]}</script>
+<script src="/thurranes-preview/assets/vendor/gsap.min.js" defer></script><script src="/thurranes-preview/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/thurranes-preview/assets/picker/stay-picker.js" defer></script><script src="/thurranes-preview/assets/vendor/sndr-booking.js" defer></script><script src="/thurranes-preview/assets/js/site.js" defer></script><script src="/thurranes-preview/assets/js/detail.js" defer></script></body></html>
